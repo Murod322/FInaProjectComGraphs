@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="LPbackground" prefHeight="558.0" prefWidth="781.0" styleClass="LPbackground" stylesheets="@LPcss.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaproject.LandingPageController">
+   <children>
+      <ImageView fitHeight="61.0" fitWidth="60.0" layoutX="216.0" layoutY="374.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/appLogo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="288.0" layoutY="352.0" prefHeight="103.0" prefWidth="350.0" text="TypingGuru" textFill="WHITE">
+         <font>
+            <Font size="47.0" />
+         </font>
+      </Label>
+      <Label layoutX="222.0" layoutY="446.0" prefHeight="18.0" prefWidth="500.0" text="This is an application developed by Murod Qoimdodov." textFill="WHITE" />
+      <AnchorPane fx:id="subpane" layoutX="92.0" layoutY="52.0" prefHeight="196.0" prefWidth="598.0" styleClass="subpane">
+         <children>
+            <JFXButton fx:id="quickTestButton" layoutX="233.0" layoutY="123.0" onAction="#goToTest" prefHeight="47.0" prefWidth="158.0" text="Take a quick test" />
+            <Label layoutX="198.0" layoutY="31.0" prefHeight="67.0" prefWidth="202.0" text="Are you sure, you are typing guru? If yes please the button below" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
